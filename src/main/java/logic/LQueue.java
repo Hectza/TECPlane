@@ -1,4 +1,4 @@
-package tecplane.proyecto2;
+package logic;
 
 public class LQueue<T> {
 	
@@ -40,6 +40,14 @@ public class LQueue<T> {
 		}
 		return this.front.getNext().getElement();
 	}
+        
+        public Node firstNode(){
+            if(this.size == 0){
+			System.out.println("Queue is empty");
+			return null;
+		}
+		return this.front.getNext();
+        }
 	
 	public int size(){
 		return this.size;

@@ -1,4 +1,4 @@
-package tecplane.proyecto2;
+package logic;
 
 public class LinkedList {
 	
